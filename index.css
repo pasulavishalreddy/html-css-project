@@ -275,7 +275,7 @@ rem{
 
 .box-card1{
     display: flex;
-    align-content: center;
+    justify-content: center;
     background-color:#fff;
     height:53vh;
     width:20vw;
@@ -299,7 +299,7 @@ rem{
     padding:10px;
     border-radius:10px ;
     width:4vw;
-    height:10vh;
+    height:20px;
 }
 
 .card-part1-right1{
@@ -382,6 +382,7 @@ rem{
     background-image:url(https://themewagon.github.io/snapx/assets/images/closed-bg.jpg);
     height:100vh;
     width:100vw;
+    text-align: center;
 }
 
 
@@ -393,8 +394,7 @@ rem{
 
 #winner-part-h4{
     color:var(--blue);
-    text-align: center;
-
+    text-align:center;
 }
 
 #winner-part-h4>em{
@@ -406,10 +406,101 @@ rem{
     display:flex;
     flex-wrap: wrap;
     margin:20px;
+    gap:50px;
+    padding:20px 0px 0px 60px;
 }
 
-#winner-image1{
+#winner-image1,#winner-image2,#winner-image3{
     background-color:var(--white);
-    height:10vh;
+    height:55vh;
+    width:27vw;
+    border-radius:20px;
+}
+
+#winner-image1>img,#winner-image2>img,#winner-image3>img{
+    border-radius:20px 20px 0px 0px;
+    height:40vh;
+    width:27vw;
+}
+
+/* #winner-image2>img{
+    border-radius:20px 20px 0px 0px;
+} */
+
+/* #winner-image3>img{
+    border-radius:20px 20px 0px 0px;
+} */
+
+#winner-text{
+    display: flex;
+    /* flex-wrap:wrap; */
+    gap: 50px;
+    margin-top:20px;
+    padding:10px;
+    
+}
+
+#winner-text1{
+    flex-wrap:wrap;
+
+}
+
+
+#winner-text2{
+    flex-wrap:nowrap;
+}
+
+#winner-text2>h4{
+    flex-wrap:nowrap;
+}
+
+#winner-text1>p,#winner-text2>p{
+    color:silver;
+}
+
+#winner-button>p{
+    display:flex;
+    justify-content: center;
+    padding:15px;
+    display:inline;
+    color:var(--blue);
     border-radius:10px;
+    border:2px solid blue;
+     
+
+}
+
+ #card-container{
+   display:flex;
+   padding:10px;
+   margin-top: 20px;
+   /* flex-wrap:wrap;
+   height:100vh;
+   width:100vw;
+   justify-content: center; */
+}
+
+#card-text{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#card-text>p{
+    color:var(--blue);
+}
+
+#card-text-em>em{
+    color: var(--blue);
+    font-style: normal;
+}
+
+#card-1{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:center;
+    padding:20px;
+    height:20vh;
+    width:20vw;
+    border:1px solid black;
 }
