@@ -117,11 +117,7 @@ rem{
 .banner-text4:hover .banner-text-i{
     color:var(--blue);
 }
-#carouselExampleindicators{
-    margin:auto;
-    display: flex;
-    justify-content: center;     
-}
+
 .carousel,#carouselExampleIndicators{
     display: flex;
     justify-content: center;
@@ -220,8 +216,8 @@ rem{
 .parent-card{
     margin:20px 0px 20px 0px;
     display:flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content:space-around;
+    width: 100vw;
 }
 .box-card1{
     display:flex; 
@@ -474,6 +470,15 @@ rem{
 }
 
 @media screen and (min-width:0px) and (max-width:400px) {
+    .carding{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: red; */
+        /* height: ; */
+        width:100%;
+        margin-left: 180px;
+    }
     .header{
         font-size: 21px;
         gap: 6px;
@@ -523,7 +528,8 @@ rem{
         font-size: 60px;
     }
     .section2>a{
-        font-size: 30px;
+        font-size: 1em;
+        width: 58vw;
     }
     .parent-card{
         flex-wrap: wrap;
@@ -564,6 +570,9 @@ rem{
         margin-top: 70px;
     }
     #card-text{
+        width: 100vw;
+        display: flex;
+        margin-left:40px;
         flex-wrap: wrap;
         font-size: 30px;
         justify-content: center;
@@ -579,15 +588,22 @@ rem{
         margin-left:20vw;
     }
     #card-container{
-        height: 115vh;
+        height: 135vh;
         width: 100vw;
     }
     .card-1{
         flex-direction: column;
     }
-    card-1>img{
+    .card-1>img{
         width: 62vw;
         height: 54vw;
+    }
+
+    .bottom{
+        margin-top:3vw;
+    }
+    .bottom>p{
+        width:228vw;
     }
 }
  
